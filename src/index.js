@@ -3,13 +3,13 @@ const Mustache = require('mustache');
 
 class ReactMustache extends React.Component {
 
-  compileTemplate(template, data){
+  compileTemplate(template, data) {
     // lazy template compiling
     return Mustache.render(template,data);
   }
 
   render() {
-    const { template, data, Component, ...props } = this.props
+    const { template, data, ...props } = this.props
     if (!template) return false
 
     const __html = this.compileTemplate(template, data);
@@ -22,7 +22,7 @@ class ReactMustache extends React.Component {
 
 ReactMustache.defaultProps = {
   data: {},
-  Component: 'div'
+  Component: 'div',
 }
 
 
