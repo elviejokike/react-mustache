@@ -1,7 +1,7 @@
 import React from 'react';
 const Mustache = require('mustache');
 
-export default class ReactMustache extends React.Component {
+class ReactMustache extends React.Component {
 
   compileTemplate(template, data){
     // lazy template compiling
@@ -24,3 +24,6 @@ ReactMustache.defaultProps = {
   data: {},
   Component: 'div'
 }
+
+
+export default ReactMustache;
