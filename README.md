@@ -8,7 +8,7 @@ React wrapper-component for mustache. Can be used to render templates inside a r
 ## Usage
 
 ```
-import Hogan from 'react-hogan'
+import ReactMustache from 'react-mustache'
 ```
 
 ```
