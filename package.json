@@ -1,6 +1,6 @@
 {
   "name": "react-mustache",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "React component for Mustache.",
   "main": "lib/index.js",
   "dependencies": {
@@ -10,23 +10,14 @@
     "react": "^15.0.2"
   },
   "devDependencies": {
-    "babel-cli": "^6.6.4",
-    "babel-core": "^6.7.4",
-    "babel-eslint": "^6.0.2",
-    "babel-plugin-transform-es2015-modules-umd": "^6.6.5",
-    "babel-polyfill": "^6.7.4",
-    "babel-preset-es2015": "^6.6.0",
-    "babel-preset-react": "^6.5.0",
-    "babel-preset-stage-2": "^6.5.0",
-    "eslint": "^2.7.0",
-    "eslint-plugin-babel": "^3.1.0",
-    "eslint-plugin-react": "^4.2.3",
-    "react-addons-test-utils": "^15.0.0",
+    "nwb": "0.9.x",
     "react": "^15.0.2"
   },
   "scripts": {
-    "lint": "eslint ./src",
-    "prepublish": "babel --plugins 'transform-es2015-modules-umd' src --ignore __tests__ --out-dir ./dist"
+    "build": "nwb build",
+    "clean": "nwb clean",
+    "start": "nwb serve",
+    "test": "nwb test"
   },
   "authors": [
     {

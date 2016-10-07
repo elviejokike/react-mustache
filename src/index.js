@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 const Mustache = require('mustache');
 
-class ReactMustache extends Component {
+class ReactMustache extends React.Component {
 
   compileTemplate(template, data) {
     // lazy template compiling
@@ -9,13 +9,14 @@ class ReactMustache extends Component {
   }
 
   render() {
-    const { template, data, ...props } = this.props
+    const { template, data } = this.props;
+
     if (!template) return false
 
     const __html = this.compileTemplate(template, data);
 
     return (
-      <Component dangerouslySetInnerHTML={{__html}} {...props}/>
+      <Component dangerouslySetInnerHTML={{__html}}/>
     )
   }
 }
