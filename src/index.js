@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 const Mustache = require('mustache');
 
-class ReactMustache extends React.Component {
+export default class ReactMustache extends React.Component {
 
   compileTemplate(template, data) {
     // lazy template compiling
@@ -9,7 +9,7 @@ class ReactMustache extends React.Component {
   }
 
   render() {
-    const { template, data } = this.props;
+    const { template, data, Component } = this.props;
 
     if (!template) return false
 
@@ -23,8 +23,5 @@ class ReactMustache extends React.Component {
 
 ReactMustache.defaultProps = {
   data: {},
-  Component: 'div',
+  Component: 'div'
 }
-
-
-export default ReactMustache;
