@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 const Mustache = require('mustache');
 
-class ReactMustache extends React.Component {
+class ReactMustache extends Component {
 
   compileTemplate(template, data) {
     // lazy template compiling
