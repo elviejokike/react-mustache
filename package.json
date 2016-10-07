@@ -22,9 +22,7 @@
   },
   "scripts": {
     "build": "nwb build",
-    "clean": "nwb clean",
-    "start": "nwb serve",
-    "test": "nwb test"
+    "clean": "nwb clean"
   },
   "authors": [
     {
