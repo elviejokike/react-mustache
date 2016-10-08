@@ -8,6 +8,8 @@
 
 React wrapper-component for mustache. Can be used to render templates inside a react component.
 
+[![npm](https://img.shields.io/npm/v/npm.svg?maxAge=2592000)](https://www.npmjs.com/package/react-mustache)
+
 ## Usage
 
 ```
