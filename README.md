@@ -1,6 +1,6 @@
 # react-mustache
 
-[![npm package](https://img.shields.io/npm/v/react-mustache.svg?style=flat-square)]https://www.npmjs.org/package/react-mustache
+[![npm package](https://img.shields.io/npm/v/react-mustache.svg?style=flat-square)](https://www.npmjs.org/package/react-mustache)
 [![Build Status](https://travis-ci.org/elviejokike/react-mustache.svg?branch=master)](https://travis-ci.org/elviejokike/react-mustache)
 
 React wrapper-component for mustache. Can be used to render templates inside a react component.
